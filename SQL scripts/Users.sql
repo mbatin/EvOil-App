@@ -1,0 +1,10 @@
+CREATE TABLE Users (	
+	userId INT NOT NULL,
+	name NVARCHAR (30) NOT NULL,
+	username NVARCHAR (30) NOT NULL,
+	passwordHash NVARCHAR (30) NOT NULL,
+    typeOfUser INT NOT NULL,
+	
+	CONSTRAINT PK_Users
+	PRIMARY KEY NONCLUSTERED (userId)
+)
