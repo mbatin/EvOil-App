@@ -1,0 +1,47 @@
+<Window x:Class="EvOil.Ui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EvOil.Ui"
+        mc:Ignorable="d"
+        Title="EvOil" FontSize="10" Height="450" Width="800">
+  <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Username" Margin="2"/>
+            <TextBox x:Name="setUsername" Padding="2" Width="150" Height="20" HorizontalAlignment="Left" Margin="2 0 0 0" />
+            <TextBlock Text="Get user" Margin="0,45,0,0"/>
+            <TextBox x:Name="sendUsername" Padding="2" Width="150" Height="20" HorizontalAlignment="Left" Margin="2 0 0 0" />
+            <Button Click="GetUser" FontSize="10" HorizontalAlignment="Left" Content="Get User" Margin="2 10 0 0"  Width="70" Height="40"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="Password" Margin="2 0 0 0"/>
+            <TextBox x:Name="setPassword" Padding="2" Width="150" Height="20" HorizontalAlignment="Left" Margin="2 0 0 10" />
+            <Button Click="AddUser" FontSize="10" HorizontalAlignment="Left" Content="Add User" Margin="2 10 0 0"  Width="70" Height="40"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <TextBlock Text="Oil Code Name" Margin="2 0 0 0"/>
+            <TextBox x:Name="setCodeName" Padding="2" Width="150" Height="20" HorizontalAlignment="Left" Margin="2 0 0 0" />
+        </StackPanel>
+
+        <StackPanel Grid.Column="3">
+            <TextBlock Text="Oil Full Name" Margin="2 0 0 0"/>
+            <TextBox x:Name="setFullName" Padding="2" Width="150" Height="20" HorizontalAlignment="Left" Margin="2 0 0 10" />
+            <Button Click="AddOil" FontSize="10" HorizontalAlignment="Left" Content="Add Oil" Margin="2 10 0 0"  Width="70" Height="40"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="4">
+            <TextBlock Text="Message Box" Margin="2 10 0 0"/>
+            <TextBox x:Name="messageBox" Padding="2" IsReadOnly="True" Background="#eee" Width="170" Height="40" HorizontalAlignment="Left" Margin="2 0 0 0" />
+            </StackPanel>
+    </Grid>
+</Window>
